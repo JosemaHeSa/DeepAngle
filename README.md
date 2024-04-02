@@ -20,7 +20,7 @@ We have validated DeepAngle by comparing it with direct measurement tequnique to
 Here, I have written some demos to calculate a few contact angles. 
 
 ### Demo #1 : Calculating the contact angle distribution from real data
-In this example, the input data is recorded in an hdf file with the format of 16-bit signed integer and filed name of "/Map". Three phases are availible in the image, solid, fluid #1 and fluid #2. Solid is denoted by voxel values of 1, fluid #1 which is assumed to be the wetting phase or water is coded as voxel values of 0, and fluid #2 is coded with voxel values of 2. If you are dealing with clyndrical images instead of a full cube, use -1 for pixels out side of the region of interest. 
+In this example, the input data is recorded in an hdf file with the format of 16-bit signed integer and filed name of "/Map". Three phases are availible in the image, solid, fluid #1 and fluid #2. Solid is denoted by voxel values of 1, fluid #1 which is assumed to be the wetting phase or water is coded as voxel values of 0, and fluid #2 is coded with voxel values of 2. If you are dealing with cylindrical images instead of a full cube, use -1 for pixels out side of the region of interest. 
 In this example, the raw tomography data is sub-sampled from the data of this paper: [From connected pathway flow to ganglion dynamics by Rucker et al.].
 ```python
 import deepangle as da
